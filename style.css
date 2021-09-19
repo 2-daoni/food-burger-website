@@ -271,6 +271,36 @@ section {
   padding: 1rem 0.1rem;
 }
 
+/* ----------------steps 영역-------------- */
+.steps {
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.steps .box {
+  flex: 1 1 25rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.steps .box i {
+  font-size: 5rem;
+  color: var(--orange);
+  background: #333;
+  border-radius: 50%;
+  border: 3rem solid #333;
+}
+
+.steps .box h3 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #333;
+  padding: 1rem 0;
+}
+
 /* ---------------- Media ---------------- */
 @media (max-width: 991px) {
   html {
