@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
 
 :root {
   --orange: hsl(38, 95%, 56%);
@@ -24,10 +25,12 @@
 
 html {
   font-size: 62.5%;
-  overflow: hidden;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
 }
+
+/* -----------header 영역------------ */
 
 header {
   position: fixed;
@@ -77,6 +80,7 @@ section {
   padding: 2rem 9%;
 }
 
+/* -----------home 섹션------------ */
 .home {
   display: flex;
   flex-wrap: wrap;
@@ -99,7 +103,7 @@ section {
 
 .home .image img {
   width: 100%;
-  padding: 1rem;
+  padding: 5rem;
   animation: float 3s linear infinite;
 }
 
@@ -143,6 +147,130 @@ section {
 .btn:hover {
   transform: translateY(-5px);
 }
+
+/* -----------speciality 영역------------ */
+.heading {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  color: #666;
+}
+
+.heading span {
+  color: var(--orange);
+  padding: 1rem 0;
+}
+
+.speciality .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.speciality .box-container .box {
+  flex: 1 1 40rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.speciality .box-container .box .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: -100%;
+  left: 0;
+}
+
+.speciality .box-container .box .content {
+  text-align: center;
+  background: #fff;
+  padding: 2rem;
+}
+
+.speciality .content i {
+  font-size: 5rem;
+  color: var(--orange);
+  margin-bottom: 1rem;
+}
+
+.speciality .content h3 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.speciality .content p {
+  font-size: 1.5rem;
+}
+
+.speciality .box-container .box:hover .image {
+  top: 0;
+}
+
+.speciality .box-container .box:hover .content {
+  transform: translateY(100%);
+  transition: all 0.75s ease-in-out;
+}
+
+/* ---------------- popular 영역 ---------------- */
+.popular {
+  margin-top: 10rem;
+}
+
+.popular .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.popular .box-container .box {
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(252, 141, 50, 0.774);
+  border-radius: 0.5rem;
+  text-align: center;
+  flex: 1 1 30rem;
+  position: relative;
+}
+
+.popular .box-container .box img {
+  height: 25rem;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.popular .box-container .box .price {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  background: var(--orange);
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.popular .box-container .box h3 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #333;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.popular .box-container .box .stars i {
+  color: var(--orange);
+  font-size: 1.7rem;
+  padding: 1rem 0.1rem;
+}
+
 /* ---------------- Media ---------------- */
 @media (max-width: 991px) {
   html {
