@@ -59,6 +59,7 @@ header .logo i {
 
 header .navbar a {
   font-size: 2rem;
+  font-weight: bold;
   margin-left: 2rem;
   color: #666;
 }
@@ -413,6 +414,40 @@ section {
 .order .row form .btn:hover {
   background: var(--orange);
 }
+
+/* ----------------footer 영역------------- */
+.footer {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.footer .social {
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .social i {
+  color: var(--orange);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.footer .social i:hover {
+  color: #333;
+}
+
+.footer .rights {
+  padding: 5rem 1rem;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.footer .rights span {
+  color: var(--orange);
+}
 /* ---------------- Media ---------------- */
 @media (max-width: 991px) {
   html {
@@ -438,7 +473,7 @@ section {
     top: 100%;
     left: 0;
     right: 0;
-    background: hsl(38, 95%, 97%);
+    background: #fff;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
     /* 1. clip-path */
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
